@@ -14,12 +14,40 @@
         <li>WORK</li>
         <li>CONTACT</li>
       </ul>
-    </header>
+</header>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+    });
+  });
+  </script>
+  <style> 
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #9da6b0;
+    border: solid 1px #9da6b0;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+  </style>
+  </head>
+  <body>
+   
+  <div id="flip">Hey, Contact Me!</div>
+  <div id="panel">email message box</div>
+  
+  </body>
     <section class="heroImg">
       <div class="content">
-        <img src="images/IMG_1735.jpeg">
-        <h1>Camille Needs</h1>
-        <p>I am a product designer specializing in UX, research, and visual design. I studied advertising in college and understand that good design can push business forward.</p>
+        <img src="images/whitename.png">
+        <p>I am a product designer specializing in UX, research, and visual design.</p>
         <button type="button" class="btn btn-outline-dark">Download Resume</button>
       </div>
     </section>
@@ -79,4 +107,5 @@
       </ul>
     </footer>
   </body>
+  <script src="js/index.js"></script>
 </html>
